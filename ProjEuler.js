@@ -1,9 +1,9 @@
 window.Euler = (function () {
-  var export = {};
+  var exports = {};
   var privy = 20;
   
   //Problem #2
-  export.largestPrimeFactor = function  (n) {
+  exports.largestPrimeFactor = function  (n) {
     var currentNumber = n;
     var largestFactor = n;
     for ( var k = 1; k < n; k++) {
@@ -23,7 +23,7 @@ window.Euler = (function () {
     return result;
   };
   
-  export.evenFibSum = function evenFibSum () {
+  exports.evenFibSum = function evenFibSum () {
     var sum = 0;
     for( var k = 3; k < 100; k += 3) {
       var kresult = fib(k);
@@ -33,6 +33,6 @@ window.Euler = (function () {
     return sum
   };
   
-  return export
+  return exports
   
 })();
