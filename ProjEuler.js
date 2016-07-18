@@ -25,10 +25,10 @@ window.Euler = (function () {
   
   exports.evenFibSum = function evenFibSum () {
     var sum = 0;
-    for( var k = 3; k < 100; k += 3) {
-      var kresult = fib(k);
-      if(kresult >= 4000000) return sum;
-      sum += kresult;
+    var k = 3;
+    while(fib(k) < 4000000) {
+      sum += fib(k);
+      k += 3;
     };
     return sum
   };
